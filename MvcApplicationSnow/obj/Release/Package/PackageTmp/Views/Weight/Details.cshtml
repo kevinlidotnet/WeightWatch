@@ -1,0 +1,29 @@
+﻿@model MvcApplicationSnow.Models.Weight
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Weight</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FieldA)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FieldA)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FieldB)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FieldB)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.WeightID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
